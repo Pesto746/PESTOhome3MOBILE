@@ -8,7 +8,7 @@
   <title>Pesto Homepage</title>
   <meta name="google-site-verification" content="D3LFrdUTrlatgJkydYfAXZmXHYtzPQvFqwLoVjy8Iig" />
   <!-- Link to manifest with subfolder path -->
-  <link rel="manifest" href="/PESTOhome/manifest.json"> 
+  <link rel="manifest" href="/PESTOhome/manifest.json">
   
 <!-- 1. Standard Favicon for Browser Tabs -->
 <link rel="icon" type="image/png" href="logo.png">
@@ -94,13 +94,13 @@
   <!-- Links section 1. Replace the # inside of the "" with your links. -->
   <div class="links-container" id="matrixContainer">
     <!--You can delete the ID part-->
-<a href="https://pesto746.github.io/PESTOsearch" class="w3-button w3-hover-lime w3-large w3-green w3-round-large" style="width: 350px;" target="_blank">PESTOsearch</a>
+<a href="https://spotify.com" class="w3-button w3-hover-lime w3-large w3-green w3-round-large" style="width: 350px;" target="_blank">My playlist</a>
 
-<a href="https://realben9.github.io/" class="w3-button w3-hover-deep-orange w3-large w3-red w3-round-large" style="width: 350px;" target="_blank">Realben9's webpage</a>
+<a href="https://bored.com" class="w3-button w3-hover-deep-orange w3-large w3-red w3-round-large" style="width: 350px;" target="_blank">BORED</a>
 
-<a href="https://neal.fun" class="w3-button w3-hover-light-blue w3-large w3-blue w3-round-large" style="width: 350px;" target="_blank">neal fun</a>
+<a href="https://geometrydash.com" class="w3-button w3-hover-light-blue w3-large w3-blue w3-round-large" style="width: 350px;" target="_blank">Geometry Dash</a>
 
-<a href="https://theuselessweb.com/" class="w3-button w3-hover-amber w3-large w3-orange w3-round-large" style="width: 350px;" target="_blank">the useless web</a>
+<a href="https://chess.com" class="w3-button w3-hover-amber w3-large w3-orange w3-round-large" style="width: 350px;" target="_blank">Chess</a>
 
 <a id="startMatrix" class="w3-button w3-hover-khaki w3-large w3-yellow w3-round-large" style="width: 350px;" target="_blank">start matrix</a>
 
@@ -218,5 +218,11 @@
         }
       };
     </script>
-  </body>
- </html>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/PESTOhome/sw.js', { scope: '/PESTOhome/' })
+      .then(() => console.log('Service Worker Registered'));
+  }
+</script>
+ </body>
+</html>
